@@ -1,0 +1,29 @@
+.container {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+  border: 2px solid red;
+}
+
+.container-item-1 {
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.container-item-2 {
+  background-color: green;
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.container-item-3 {
+  background-color: yellow;
+  grid-column-start: 8;
+  grid-column-end: 12;
+}
+
+
+@mixin grid-columns($amountOfColumns) {
+
+}
