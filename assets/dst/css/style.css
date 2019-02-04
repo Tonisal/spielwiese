@@ -333,5 +333,10 @@ template {
     background-color: orange; }
 
 .header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
   background-color: red;
   border: 2px solid black; }
