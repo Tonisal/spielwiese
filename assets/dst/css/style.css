@@ -279,10 +279,8 @@ template {
   padding: 4rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+  -ms-grid-columns: (1fr)[6];
   grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
   border: 2px solid red; }
 
 .container-item-1,
