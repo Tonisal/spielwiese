@@ -7,12 +7,18 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
 const concat = require('gulp-concat');
 const imagemin = require('gulp-imagemin');
+const autoprefixer = require('gulp-autoprefixer');
 
 sass.compiler = require('node-sass');
 
 gulp.task('compileCSS', function () {
     return gulp.src('assets/src/scss/style.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 4 versions'],
+            cascade: false,
+            grid: "autoplace",
+        }))
         .pipe(gulp.dest('assets/dst/css'))
         .pipe(cleanCSS())
         .pipe(rename({
