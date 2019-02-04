@@ -306,37 +306,37 @@ template {
 .site {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header" "header header"; }
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "header header" "title sidebar" "main sidebar" "footer footer"; }
   .site * {
     padding: 3rem;
     font-size: 2rem; }
   .site .mastheader {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: header;
     background-color: red; }
   .site .page-title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: title;
     background-color: blue; }
   .site .main-content {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: main;
     background-color: green; }
   .site .sidebar {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: sidebar;
     background-color: yellow; }
   .site .footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: footer;
     background-color: orange; }
-
-.header {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: header;
-  background-color: red;
-  border: 2px solid black; }

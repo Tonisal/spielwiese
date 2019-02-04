@@ -38,8 +38,9 @@
 
 .site {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header" "header header";
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "header header" "title sidebar" "main sidebar" "footer footer";
+
   * {
     padding: 3rem;
     font-size: 2rem;
@@ -67,12 +68,6 @@
     grid-area: footer;
     background-color: orange;
   }
-}
-
-.header {
-  grid-area: header;
-  background-color: red;
-  border: 2px solid black;
 }
 
 
