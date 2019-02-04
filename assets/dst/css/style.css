@@ -308,12 +308,13 @@ template {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header"; }
+  grid-template-areas: "header header" "header header"; }
   .site * {
     padding: 3rem;
     font-size: 2rem; }
   .site .mastheader {
     -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: header;

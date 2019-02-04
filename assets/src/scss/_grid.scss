@@ -39,7 +39,7 @@
 .site {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header";
+  grid-template-areas: "header header" "header header";
   * {
     padding: 3rem;
     font-size: 2rem;
