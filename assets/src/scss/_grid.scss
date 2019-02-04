@@ -5,9 +5,9 @@
 .container {
   padding: 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  //grid-column-gap: 2rem;
-  //grid-row-gap: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
   border: 2px solid red;
 }
 
@@ -30,6 +30,43 @@
 .container-item-8 {
   grid-column-end: span 3;
   background-color: red;
+}
+
+
+//The IE 10/11 Try
+
+.site {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "header header" "title sidebar" "main sidebar" "footer footer";
+
+  * {
+    padding: 3rem;
+    font-size: 2rem;
+  }
+  .mastheader {
+    grid-area: header;
+    background-color: red;
+  }
+
+  .page-title {
+    grid-area: title;
+    background-color: blue;
+  }
+
+  .main-content {
+    grid-area: main;
+    background-color: green;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: yellow;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: orange;
+  }
 }
 
 
