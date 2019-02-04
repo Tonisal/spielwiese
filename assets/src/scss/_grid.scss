@@ -1,4 +1,4 @@
-@function grid-columns($amount) {
+@function  grid-columns($amount) {
   @return percentage(1 / $amount);
 }
 
@@ -32,34 +32,40 @@
   background-color: red;
 }
 
+
 //The IE 10/11 Try
 //https://medium.com/@elad/supporting-css-grid-in-internet-explorer-b38669e75d66
 
 .site {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header header" "title sidebar" "main sidebar" "footer footer";
 
   * {
     padding: 3rem;
     font-size: 2rem;
   }
   .mastheader {
+    grid-area: header;
     background-color: red;
   }
 
   .page-title {
+    grid-area: title;
     background-color: blue;
   }
 
   .main-content {
+    grid-area: main;
     background-color: green;
   }
 
   .sidebar {
+    grid-area: sidebar;
     background-color: yellow;
   }
-
   .footer {
+    grid-area: footer;
     background-color: orange;
   }
 
