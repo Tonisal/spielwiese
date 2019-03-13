@@ -340,3 +340,26 @@ template {
     -ms-grid-column-span: 2;
     grid-area: footer;
     background-color: orange; }
+
+.link-container {
+  border: 1px solid black;
+  max-width: 500px; }
+  .link-container a {
+    margin-bottom: 50px;
+    display: block; }
+  .link-container .link-with-after::after {
+    content: '';
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .link-container .link-with-svg span {
+    margin-right: 3rem; }
+  .link-container .link-with-svg svg {
+    height: 20px;
+    width: 20px;
+    margin-left: -3rem; }
