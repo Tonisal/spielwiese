@@ -363,3 +363,6 @@ template {
     height: 20px;
     width: 20px;
     margin-left: -3rem; }
+
+.speed-page ul {
+  list-style: none; }
